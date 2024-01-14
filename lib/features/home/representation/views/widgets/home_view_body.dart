@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/styles.dart';
-import 'best_seller_list_view.dart';
-import 'best_seller_listview_item.dart';
+import 'Book_list_view.dart';
+import 'book_list_view_item.dart';
 import 'custom_app_bar.dart';
 import 'featured_list_view.dart';
 
