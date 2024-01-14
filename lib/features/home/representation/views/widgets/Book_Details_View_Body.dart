@@ -4,6 +4,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../../../../../core/utils/assets.dart';
 import '../../../../../core/utils/styles.dart';
+import 'book_rating.dart';
 import 'custom_book_details_appbar.dart';
 import 'custom_book_item.dart';
 
@@ -46,6 +47,10 @@ class BookDetailsViewBody extends StatelessWidget {
               ),
                        ),
            ),
+          const SizedBox(
+            height: 18,
+          ),
+          const BookRating(mainAxisAlignment: MainAxisAlignment.center,),
 
         ],
       ),
