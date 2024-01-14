@@ -21,7 +21,7 @@ class HomeViewBody extends StatelessWidget {
            crossAxisAlignment: CrossAxisAlignment.start,
            children: [
              SizedBox(
-               height: 50,
+               height: 37,
              ),
              Padding(
                padding: EdgeInsets.symmetric(horizontal: 30.0),
