@@ -12,10 +12,11 @@ class CustomTextField extends StatelessWidget {
         focusedBorder: buildOutlineInputBorder(),
         hintText: 'Search for your book',
         suffixIcon: IconButton(
-          onPressed: (){},
+          onPressed: () {},
           icon: const Opacity(
             opacity: 0.8,
-            child: Icon(FontAwesomeIcons.magnifyingGlass,
+            child: Icon(
+              FontAwesomeIcons.magnifyingGlass,
               size: 22,
             ),
           ),
@@ -29,7 +30,6 @@ class CustomTextField extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         borderSide: const BorderSide(
           color: Colors.white,
-        )
-    );
+        ));
   }
 }

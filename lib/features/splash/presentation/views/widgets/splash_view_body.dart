@@ -1,11 +1,8 @@
-
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../../../core/utils/app_router.dart';
 import '../../../../../core/utils/assets.dart';
-
-
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -29,8 +26,6 @@ class _SplashViewBodyState extends State<SplashViewBody>
 
     navigateToHome();
   }
-
-
 
 // important to dispose animation
   @override
@@ -105,9 +100,9 @@ class _SplashViewBodyState extends State<SplashViewBody>
   }
 
   void navigateToHome() {
-
-    Future.delayed(const Duration(seconds: 2),
-          () {
+    Future.delayed(
+      const Duration(seconds: 2),
+      () {
         /* Get.to(
           () => const HomeView(),
       transition: Transition.fadeIn,

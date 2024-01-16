@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -14,7 +13,7 @@ class BookListViewItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){
+      onTap: () {
         GoRouter.of(context).push(AppRouters.kBookDetailsView);
       },
       child: SizedBox(
@@ -22,7 +21,7 @@ class BookListViewItem extends StatelessWidget {
         child: Row(
           children: [
             AspectRatio(
-              aspectRatio: 2.5/4,
+              aspectRatio: 2.5 / 4,
               child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8),
@@ -32,14 +31,16 @@ class BookListViewItem extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(width: 30,),
-             Expanded(
-               child: Column(
-                 crossAxisAlignment: CrossAxisAlignment.start,
+            const SizedBox(
+              width: 30,
+            ),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   SizedBox(
-                    width: MediaQuery.of(context).size.width*0.5,
-                    child:  Text(
+                    width: MediaQuery.of(context).size.width * 0.5,
+                    child: Text(
                       'Harry Potter and the Goblet of Fire',
                       style: Styles.textStyle20.copyWith(
                         fontFamily: kGtSectraFine,
@@ -48,14 +49,17 @@ class BookListViewItem extends StatelessWidget {
                       overflow: TextOverflow.ellipsis,
                     ),
                   ),
-                  const SizedBox(height: 3,),
+                  const SizedBox(
+                    height: 3,
+                  ),
                   const Text(
                     'J.K Rowling',
                     style: Styles.textStyle14,
                   ),
-
-                  const SizedBox(height: 3,),
-                   Row(
+                  const SizedBox(
+                    height: 3,
+                  ),
+                  Row(
                     children: [
                       Text(
                         '19.9 €',
@@ -67,15 +71,12 @@ class BookListViewItem extends StatelessWidget {
                       const BookRating(),
                     ],
                   ),
-
                 ],
-                         ),
-             )
+              ),
+            )
           ],
         ),
       ),
     );
   }
 }
-
-

@@ -11,16 +11,19 @@ class BookButtonActions extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 8),
       child: Row(
         children: [
-          Expanded(child: CustomButton(
-            text: '19.9 €',
-            textColor: Colors.black,
-            backgroundColor: Colors.white,
-            borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(16),
-              bottomLeft: Radius.circular(16),
+          Expanded(
+            child: CustomButton(
+              text: '19.9 €',
+              textColor: Colors.black,
+              backgroundColor: Colors.white,
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(16),
+                bottomLeft: Radius.circular(16),
+              ),
             ),
-          ),),
-          Expanded(child: CustomButton(
+          ),
+          Expanded(
+              child: CustomButton(
             text: 'Free Preview',
             fontSize: 16,
             textColor: Colors.white,
