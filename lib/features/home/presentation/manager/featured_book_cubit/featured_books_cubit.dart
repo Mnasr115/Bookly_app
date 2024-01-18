@@ -1,8 +1,9 @@
 import 'package:bloc/bloc.dart';
 import 'package:bookly_application/features/home/data/repos/home_repos.dart';
-import 'package:meta/meta.dart';
+import 'package:flutter/material.dart';
 
-import '../../../data/models/BookModel.dart';
+import '../../../data/models/book.model.dart';
+
 
 part 'featured_books_state.dart';
 
