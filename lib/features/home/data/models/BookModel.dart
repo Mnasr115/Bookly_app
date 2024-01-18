@@ -23,7 +23,7 @@ class BookModel {
       this.accessInfo, 
       this.searchInfo,});
 
-  BookModel.fromJson(dynamic json) {
+   BookModel.fromJson(dynamic json) {
     kind = json['kind'];
     id = json['id'];
     etag = json['etag'];
