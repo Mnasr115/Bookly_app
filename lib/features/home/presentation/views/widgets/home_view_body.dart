@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/styles.dart';
-import 'Book_list_view.dart';
+import 'Newest_Books_list_view.dart';
 import 'custom_app_bar.dart';
 import 'featured_list_view.dart';
 
@@ -36,7 +36,7 @@ class HomeViewBody extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 30.0),
                 child: Text(
-                  'Best Seller',
+                  'Newest Books',
                   style: Styles.textStyle18,
                 ),
               ),
@@ -47,7 +47,8 @@ class HomeViewBody extends StatelessWidget {
           ),
         ),
         SliverFillRemaining(
-          child: BestSellerListView(),),
+          child: NewsBooksListView(),
+        ),
         SliverToBoxAdapter(
           child: SizedBox(
             height: 10,

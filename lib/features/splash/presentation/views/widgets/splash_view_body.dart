@@ -94,7 +94,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
     );
 
     imageSlidingAnimation =
-        Tween<Offset>(begin: const Offset(0, -10), end: Offset.zero)
+        Tween<Offset>(begin: const Offset(0, 10), end: Offset.zero)
             .animate(imageAnimationController);
     imageAnimationController.forward();
   }
