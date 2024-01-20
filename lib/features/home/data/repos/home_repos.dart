@@ -2,7 +2,7 @@
 import 'package:bookly_application/core/errors/failures.dart';
 import 'package:dartz/dartz.dart';
 
-import '../models/book.model.dart';
+import '../models/book_model.dart';
 
 abstract class HomeRepos {
   Future<Either<Failure, List<BookModel>>> fetchNewsBooks();

@@ -1,8 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:bookly_application/features/home/data/repos/home_repos.dart';
 import 'package:flutter/material.dart';
-
-import '../../../data/models/book.model.dart';
+import '../../../data/models/book_model.dart';
 
 part 'newset_book_state.dart';
 

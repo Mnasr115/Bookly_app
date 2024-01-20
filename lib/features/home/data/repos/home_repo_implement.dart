@@ -4,7 +4,8 @@ import 'package:bookly_application/features/home/data/repos/home_repos.dart';
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 
-import '../models/book.model.dart';
+import '../models/book_model.dart';
+
 
 class HomeRepoImplement extends HomeRepos {
   ApiService apiService;

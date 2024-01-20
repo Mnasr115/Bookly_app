@@ -1,3 +1,4 @@
+import 'package:bookly_application/core/utils/assets.dart';
 import 'package:bookly_application/core/widgets/custom_error.dart';
 import 'package:bookly_application/core/widgets/custom_loading_indicator.dart';
 import 'package:bookly_application/features/home/presentation/manager/featured_book_cubit/featured_books_cubit.dart';
@@ -25,7 +26,7 @@ class FeaturedBooksListView extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 8.0),
                   child: CustomBookImage(
                     imageUrl:
-                        state.books[index].volumeInfo.imageLinks.thumbnail,
+                    state.books[index].volumeInfo.imageLinks.thumbnail,
                   ),
                 );
               },
@@ -36,7 +37,7 @@ class FeaturedBooksListView extends StatelessWidget {
             errorMessage: state.errorMessage,
           );
         } else {
-          return const CustomLoadigIndicator();
+          return const CircularProgressIndicator();
         }
       },
     );
