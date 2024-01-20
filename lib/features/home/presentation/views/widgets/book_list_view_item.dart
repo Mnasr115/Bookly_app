@@ -1,13 +1,7 @@
-import 'package:bookly_application/core/widgets/custom_error.dart';
-import 'package:bookly_application/core/widgets/custom_loading_indicator.dart';
 import 'package:bookly_application/features/home/data/models/book_model.dart';
-import 'package:bookly_application/features/home/presentation/manager/newest_books_cubit/newset_book_cubit.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import '../../../../../core/utils/app_router.dart';
-import '../../../../../core/utils/assets.dart';
 import '../../../../../core/utils/styles.dart';
 import '../../../../constant.dart';
 import 'book_rating.dart';
@@ -23,7 +17,9 @@ class BookListViewItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        GoRouter.of(context).push(AppRouters.kBookDetailsView);
+        GoRouter.of(context).push(AppRouters.kBookDetailsView,
+        extra: bookModel,
+        );
       },
       child: SizedBox(
         height: 125,

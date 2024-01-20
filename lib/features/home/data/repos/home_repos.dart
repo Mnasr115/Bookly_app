@@ -7,4 +7,5 @@ import '../models/book_model.dart';
 abstract class HomeRepos {
   Future<Either<Failure, List<BookModel>>> fetchNewsBooks();
   Future<Either<Failure, List<BookModel>>> fetchFeaturedBooks();
+  Future<Either<Failure, List<BookModel>>> fetchSimilarBooks({required String category});
 }
